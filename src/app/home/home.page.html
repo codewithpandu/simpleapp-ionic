@@ -1,20 +1,79 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title class="ion-text-center" expand="inline">Pandu Setia</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+</ion-header>
+<ion-content [fullscreen]="true">
+  <ion-text color="primary">
+    <h1 class="ion-padding ion-text-center">Selamat datang di app sederhana</h1>
+  </ion-text>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Registration</ion-card-title>
+      <ion-card-subtitle>SampleApps</ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      Sebelum menggunakan aplikasi ini silahkah registrasi terlebih dahulu
+    </ion-card-content>
+  </ion-card>
+  <ion-card>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nama Lengkap</ion-label>
+        <ion-input type="text"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Email</ion-label>
+        <ion-input type="email"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">No Telp</ion-label>
+        <ion-input type="tel"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-datetime></ion-datetime>
+      </ion-item>
+      <ion-checkbox class="ion-margin">Saya setuju</ion-checkbox>
+      <ion-button expand="block">Kirim</ion-button>
+    </ion-card-content>
+  </ion-card>
 </ion-content>
+<ion-segment [scrollable]="true" value="heart">
+  <ion-segment-button value="home">
+    <ion-icon name="home"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="heart">
+    <ion-icon name="heart"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="pin">
+    <ion-icon name="pin"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="star">
+    <ion-icon name="star"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="call">
+    <ion-icon name="call"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="globe">
+    <ion-icon name="globe"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="basket">
+    <ion-icon name="basket"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="barbell">
+    <ion-icon name="barbell"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="trash">
+    <ion-icon name="trash"></ion-icon>
+  </ion-segment-button>
+  <ion-segment-button value="person">
+    <ion-icon name="person"></ion-icon>
+  </ion-segment-button>
+</ion-segment>
+<ion-footer>
+  <ion-toolbar color="primary">
+    <ion-title>Created by Pandu</ion-title>
+  </ion-toolbar>
+</ion-footer>
